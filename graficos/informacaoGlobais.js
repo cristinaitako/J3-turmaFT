@@ -12,6 +12,4 @@ const paragrafo = document.createElement('p')
 container.appendChield(paragrafo);
 
 }
-
-
 vizualizarInformacoesGlobais()
