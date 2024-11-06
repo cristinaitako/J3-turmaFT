@@ -1,12 +1,13 @@
-const url='https://github.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/tree/Aula01/trabalho'
+const url='https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/trabalho/trabalho-dados-gerais.json'
 
 async function vizualizarInformacoesGlobais() {
     const res = await fetch(url)
     const dados = await res.json()
     const pessoasEmpregadas = (dados.total_pessoas_empregadas/1e9) 
+
     const pessoasNoMundo = (dados.total_pessoas_mundo/1e9) 
     const horas = parseInt(dados.tempo_medio_trabalho_por_semana)
-    const minutos = Math.round((dados.tempo_medio_trabalho_por_semana-horas)*60)
+    const minutos = Math.round((dados.tempo_medio_trabalho_por_semana - horas)*60)
     const porcentagemConectadas =((pessoasEmpregadas/pessoasNoMundo)*100).toFixed(2)
 
     const paragrafo = document.createElement('p')
