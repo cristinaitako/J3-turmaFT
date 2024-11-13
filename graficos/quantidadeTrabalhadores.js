@@ -1,15 +1,15 @@
 
-async function quantidadeUsuarios() {
+async function quantidadeTrabalhadores() {
     const url = 'https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/trabalho/trabalho-dados-gerais.json'
     const res = await fetch(url)
     const dados = await res.json()
-    const nomeDasRedes = Object.keys(dados)
+    const nomeTrabalhadores = Object.keys(dados)
     const quantidadeDeUsuarios = Object.values(dados)
 
     const data = [
         {
-            x: nomeDasRedes, 
-            y: quantidadeDeUsuarios, 
+            x: nomeTrabalhadores, 
+            y: quantidadeTrabalhadores, 
             type: 'bar',
             marker: {
                 color: getCSS('--primary-color')
