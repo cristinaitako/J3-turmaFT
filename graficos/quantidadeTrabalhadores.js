@@ -19,7 +19,7 @@ async function quantidadeTrabalhadores() {
     document.getElementById('graficos-container').appendChild(grafico)
     Plotly.newPlot(grafico, data, laytout)
          
-
+}
 quantidadeTrabalhadores()
       
 
