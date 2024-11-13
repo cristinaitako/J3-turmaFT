@@ -1,4 +1,3 @@
-
 async function quantidadeTrabalhadores() {
     const url = 'https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/trabalho/trabalho-dados-gerais.json'
     const res = await fetch(url)
@@ -10,14 +9,14 @@ async function quantidadeTrabalhadores() {
         {
             x: nomeTrabalhadores, 
             y: quantidadeTrabalhadores, 
-            type: 'bar',
+            type: 'bar'
         }   
     ]
         
     const grafico = document.createElement('div')
     grafico.className = 'grafico'
     document.getElementById('graficos-container').appendChild(grafico)
-    Plotly.newPlot(grafico, data, laytout)
+    Plotly.newPlot(grafico, data)
          
 }
 quantidadeTrabalhadores()
