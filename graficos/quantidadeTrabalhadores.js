@@ -21,7 +21,7 @@ async function quantidadeTrabalhadores() {
         plot_bgcolor: getCSS('--bg-color'),
         paper_bgcolor: getCSS('--bg-color'),
         title: {
-            text: 'Redes sociais com mais usuários',
+            text: 'Relatórios de pessoas trabalhando',
             x: 0,
             font: {
                 color: getCSS('--primary-color'),
@@ -32,7 +32,7 @@ async function quantidadeTrabalhadores() {
         xaxis: {
             tickfont: tickConfig,
             title: {
-                text: 'Nome das redes',
+                text: 'Nome dos profissionais,
                 font: {
                     color: getCSS('--secondary-color')
                 }
@@ -41,7 +41,7 @@ async function quantidadeTrabalhadores() {
         yaxis: {
             tickfont: tickConfig,
             title: {
-                text: 'Bilhões de usuários ativos',
+                text: 'Bilhões profissonais ativos',
                 font: {
                     color: getCSS('--secondary-color')
                 }
@@ -55,6 +55,6 @@ async function quantidadeTrabalhadores() {
     Plotly.newPlot(grafico, data, laytout)
 }
 
-quantidadeUsuariosPorRede()
+quantidadeTrabalhadores()
       
 
